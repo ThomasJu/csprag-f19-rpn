@@ -10,3 +10,9 @@ class TestBasics(unittest.TestCase):
     def test_sub(self):
         result = rpn.calculate("1 1 -")
         self.assertEqual(0, result)
+
+    def test_mul(self):
+        result = rpn.calculate("3 4 *")
+        self.assertEqual(12, result)
+
+    
