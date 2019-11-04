@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
+from colorama import init
+from termcolor import colored
 import operator
+import readline
 
 operators = {
     '+': operator.add,
@@ -35,7 +38,11 @@ def main():
         if inputline == "quit()":
             break;
         result = calculate(inputline)
-        print(result)
+        
+        if result < 0:
+            print(colored('-', 'red') + str(abs(result)))
+        else:
+            print(result)
 
 
 if __name__ == '__main__':  # Note: that's "underscore underscore n a m e ..."
