@@ -5,4 +5,4 @@ python:
   - "3.6"      # current default Python on Travis CI
   - "3.7"
 script:
-  make test
+  make coverage_test
