@@ -25,10 +25,10 @@ class TestBasics(unittest.TestCase):
     
     def test_exp(self):
         result = rpn.calculate("2 3 ^")
-        self.assertEqual(3, result)
+        self.assertEqual(8, result)
     
     def test_exp(self):
-        resutl = rpn.calculate("3 0 ^")
+        result = rpn.calculate("3 0 ^")
         self.assertEqual(1, result)
     
     def test_badinput(self):
