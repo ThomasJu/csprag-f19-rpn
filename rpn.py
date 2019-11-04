@@ -31,7 +31,10 @@ def calculate(arg):
 
 def main():
     while True:
-        result = calculate(input("rpn calc> "))
+        inputline = input("rpn calc> ")
+        if inputline == "quit()":
+            break;
+        result = calculate(inputline)
         print(result)
 
 
